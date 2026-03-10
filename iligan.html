@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painitan Iligan | Premium Filipino Dining</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#f97316',
+                        'accent-hover': '#ea580c',
+                        card: '#171717',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        syne: ['Syne', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0c0c0c] text-slate-100 font-inter antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 py-3">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="block">
+                <img src="images/logo.png" alt="Painitan Logo" class="h-12 w-auto object-contain">
+            </a>
+            <div class="hidden md:flex space-x-10 items-center text-sm font-medium tracking-wide">
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors uppercase">Story</a>
+                <a href="#services" class="text-gray-300 hover:text-white transition-colors uppercase">Service</a>
+                <a href="#gallery" class="text-gray-300 hover:text-white transition-colors uppercase">Gallery</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition-colors uppercase">Contact</a>
+                <a href="https://utak.io/store/painitan" target="_blank"
+                    class="btn-accent px-6 py-2.5 rounded-full text-xs">Order Online</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/painitan_tapsilog_1773123184902.png" alt="Hero Dish"
+                class="w-full h-full object-cover object-center opacity-40 mix-blend-luminosity scale-105 animate-[zoomOut_20s_ease-out_forwards]">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0c0c0c]/80 to-[#0c0c0c]"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-20">
+            <div
+                class="inline-block mb-4 px-4 py-1.5 rounded-full border border-accent/30 text-accent text-xs font-bold tracking-widest uppercase animate-reveal">
+                Iligan Branch
+            </div>
+            <h1
+                class="text-5xl md:text-8xl font-black font-syne leading-[1.1] tracking-tight mb-8 animate-reveal delay-100">
+                A Taste of Home,<br>Available 24/7.
+            </h1>
+            <p
+                class="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto mb-10 animate-reveal delay-200 leading-relaxed">
+                Experience premium Filipino delicacies prepared fresh, all day and all night. Dine with us or order from
+                the comfort of your home.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 animate-reveal delay-300">
+                <a href="https://utak.io/store/painitan" target="_blank"
+                    class="btn-accent px-10 py-4 rounded-full text-sm w-full sm:w-auto text-center flex items-center justify-center gap-2">
+                    Start Order
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+                <a href="#"
+                    class="btn-outline px-10 py-4 rounded-full text-sm w-full sm:w-auto text-center hover:bg-white hover:text-black">
+                    Explore Menu
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block opacity-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- The Story (About) -->
+    <section id="about" class="py-32 relative">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                <div class="lg:w-1/2">
+                    <div class="relative img-wrap rounded-2xl">
+                        <img src="images/painitan_lugaw_1773123200372.png" alt="Authentic Lugaw"
+                            class="w-full h-[600px] object-cover img-zoom">
+                        <div class="absolute inset-0 border border-white/10 rounded-2xl pointer-events-none"></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase">Our Heritage</h2>
+                    <h3 class="text-4xl md:text-5xl font-syne font-bold mb-8 leading-tight">Mastering local delicacies
+                        since 2011.</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-lg">
+                        Painitan.com is an evolution of the beloved Painitan Ni Papito, originally established in
+                        Lapu-Lapu City, Cebu. We've brought our authentic flavors and unwavering commitment to quality
+                        to Iligan City.
+                    </p>
+                    <p class="text-gray-400 mb-10 leading-relaxed font-light text-lg">
+                        We specialize in dishes that comfort the soul. From rich, flavorful Lugaw topped generously, to
+                        our signature Arrozcaldo, crispy Lumpia, hearty Batchoy, and perfect Silog combos paired with
+                        freshly brewed local coffee. Every bowl and plate is a celebration of our culinary heritage.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-8 border-t border-border pt-8">
+                        <div>
+                            <p class="text-4xl font-syne font-bold text-white mb-2">24h</p>
+                            <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Service</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-syne font-bold text-white mb-2">10+</p>
+                            <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Signature Dishes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-32 bg-[#121212] border-y border-border">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase">We Live To Serve</h2>
+                <h3 class="text-4xl md:text-5xl font-syne font-bold mb-6">Always accessible, however you prefer.</h3>
+                <p class="text-gray-400 font-light text-lg">Whether you're dining in at 3 AM or craving home delivery
+                    during lunch, we are partnered with the best to ensure you are served.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Cards -->
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-syne font-bold mb-3 text-white">Dine-In</h4>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Visit us across Cosmopolitan Iligan. We
+                        are open 24 hours, Monday through Sunday.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl">
+                    <div
+                        class="w-12 h-12 rounded-full bg-pink-500/10 flex items-center justify-center mb-6 text-pink-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-12.5v5l4 2.5-4 2.5v-5z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-syne font-bold mb-3 text-white">FoodPanda</h4>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Available for rapid delivery from 4:00
+                        AM straight through to midnight.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl">
+                    <div
+                        class="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-6 text-green-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-syne font-bold mb-3 text-white">GrabFood</h4>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Round-the-clock delivery service. We are
+                        available 24/7 on the Grab app.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-syne font-bold mb-3 text-white">Direct Online</h4>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Order 24/7 directly through our
+                        proprietary UTAK store for the best rates and service.</p>
+                </div>
+
+                <!-- Call In Group -->
+                <div
+                    class="glass-card p-8 rounded-2xl md:col-span-2 lg:col-span-2 bg-card/80 flex items-center justify-between">
+                    <div>
+                        <h4 class="text-xl font-syne font-bold mb-2 text-white">Local Connect (Maxim & Ayioo)</h4>
+                        <p class="text-gray-400 font-light text-sm">Call-in orders seamlessly integrated with local
+                            courier services.</p>
+                    </div>
+                    <a href="#" class="btn-outline px-6 py-2 rounded-full text-xs">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Gallery -->
+    <section id="gallery" class="py-32 relative">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex justify-between items-end mb-16 border-b border-border pb-6">
+                <div>
+                    <h2 class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase">Visuals</h2>
+                    <h3 class="text-4xl md:text-5xl font-syne font-bold">Culinary Art.</h3>
+                </div>
+                <div class="hidden md:block">
+                    <p class="text-gray-400 font-light text-right max-w-sm">Every dish is crafted with precision,
+                        balancing authentic flavor textures with premium presentation.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div class="md:col-span-7 img-wrap h-[500px]">
+                    <img src="images/painitan_tapsilog_1773123184902.png" class="w-full h-full object-cover img-zoom"
+                        alt="Tapsilog">
+                </div>
+                <div class="md:col-span-5 flex flex-col gap-6">
+                    <div class="img-wrap h-[240px]">
+                        <img src="images/painitan_lumpia_1773123214060.png" class="w-full h-full object-cover img-zoom"
+                            alt="Lumpia">
+                    </div>
+                    <div class="img-wrap h-[236px]">
+                        <img src="images/painitan_lugaw_1773123200372.png" class="w-full h-full object-cover img-zoom"
+                            alt="Lugaw">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grand CTA -->
+    <section class="relative py-40 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-accent/10"></div>
+            <!-- Minimalist geometric backgrounds -> removed in favor of absolute clean darkness or subtle gradient -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] to-[#121212]"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-5xl md:text-7xl font-syne font-black mb-8">Ready to order?</h2>
+            <p class="text-xl text-gray-400 font-light mb-12">Skip the line. Place your order directly through our UTAK
+                platform and enjoy premium Filipino cuisine wherever you are.</p>
+            <a href="https://utak.io/store/painitan" target="_blank"
+                class="btn-accent px-12 py-5 rounded-full text-base inline-flex items-center gap-3">
+                Order via UTAK
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- High-end Footer -->
+    <footer class="bg-black pt-20 pb-10 border-t border-border">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <a href="index.html" class="block mb-6">
+                        <img src="images/logo.png" alt="Painitan Logo" class="h-16 w-auto object-contain">
+                    </a>
+                    <p class="text-gray-500 font-light text-sm max-w-sm leading-relaxed mb-6">
+                        Authentic Filipino dining evolved. From Lapu-Lapu City to Iligan, serving high-quality local
+                        delicacies 24/7.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- FB Icon minimal -->
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-border flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.597 1.323-1.325v-21.35C24 .597 23.403 0 22.675 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-white font-syne font-bold mb-6 text-sm uppercase tracking-wider">Menu Highlights
+                    </h4>
+                    <ul class="space-y-3 text-gray-500 font-light text-sm">
+                        <li><a href="#" class="hover:text-accent transition-colors">Classic Lugaw</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Premium Tapsilog</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Crispy Lumpia</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Batchoy & Lomi</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Local Brewed Coffee</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-syne font-bold mb-6 text-sm uppercase tracking-wider">Delivery Partners
+                    </h4>
+                    <ul class="space-y-3 text-gray-500 font-light text-sm">
+                        <li><a href="#" class="hover:text-accent transition-colors">Direct (UTAK)</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">GrabFood</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">FoodPanda</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Maxim</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-medium tracking-wide">
+                <p>&copy; 2026 PAINITAN.COM. ALL RIGHTS RESERVED - ILIGAN.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-gray-300">Privacy</a>
+                    <a href="#" class="hover:text-gray-300">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

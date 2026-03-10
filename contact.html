@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painitan | Let's Connect</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#f97316',
+                        'accent-hover': '#ea580c',
+                        card: '#171717',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        syne: ['Syne', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0c0c0c] text-slate-100 font-inter antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 py-3">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="block">
+                <img src="images/logo.png" alt="Painitan Logo" class="h-12 w-auto object-contain">
+            </a>
+            <div class="hidden md:flex space-x-10 items-center text-sm font-medium tracking-wide">
+                <a href="iligan.html" class="text-gray-300 hover:text-white transition-colors uppercase">Iligan</a>
+                <a href="lapulapu.html" class="text-gray-300 hover:text-white transition-colors uppercase">Lapu-Lapu</a>
+                <a href="index.html" class="text-gray-300 hover:text-white transition-colors uppercase">Locations</a>
+                <a href="contact.html" class="text-white border-b-2 border-accent pb-1 uppercase">Contact</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-40 pb-20 border-b border-border relative overflow-hidden bg-cover bg-center bg-no-repeat"
+        style="background-image: url('images/painitan_tapsilog_1773123184902.png');">
+        <div class="absolute inset-0 bg-black/80 pointer-events-none"></div>
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0c0c0c] pointer-events-none border-b border-white/5">
+        </div>
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 text-center animate-reveal">
+            <h1 class="text-5xl md:text-7xl font-black font-syne mb-6">Get in Touch.</h1>
+            <p class="text-xl text-gray-400 font-light max-w-2xl mx-auto">We are always ready to serve you. Reach out to
+                us, visit our branch, or order online directly.</p>
+        </div>
+    </header>
+
+    <!-- Contact Details & Map (SIDE-BY-SIDE) -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 lg:px-12">
+
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-20">
+
+                <!-- ILIGAN BRANCH COLUMN -->
+                <div class="space-y-8 animate-reveal delay-100 flex flex-col h-full">
+
+                    <div class="mb-4 border-b border-border pb-4">
+                        <h2 class="text-3xl md:text-4xl font-syne font-black text-white">Iligan Branch</h2>
+                        <p class="text-accent tracking-[0.2em] text-sm font-bold uppercase mt-2">Open 24/7</p>
+                    </div>
+
+                    <!-- 1. Location -->
+                    <div class="glass-card p-8 rounded-2xl relative overflow-hidden flex-1">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-bl-full -z-10 blur-2xl"></div>
+                        <h3 class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase">Location & Landmark
+                        </h3>
+                        <div class="text-gray-300 font-light leading-relaxed mb-6">
+                            <p>G/F Jose Lacuna Building.</p>
+                            <p>Roxas Avenue Extension Saray</p>
+                            <p>Iligan City, Lanao Del Norte</p>
+                            <p>9200, Philippines</p>
+                            <p class="mt-2"><span class="text-white font-medium">Street:</span> Andres Bonifacio Ave.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-black/40 border border-white/5 rounded-xl">
+                            <p class="text-sm text-gray-400 font-light"><strong
+                                    class="text-white font-medium">Landmark:</strong> Atbang sa Cosmopolitan ug Gaisano
+                                Mall Iligan.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Contact Details -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3
+                                class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                                Call Us
+                            </h3>
+                            <p class="text-lg font-medium text-white mb-2">+63 227-4456</p>
+                            <p class="text-lg font-medium text-white mb-4">0955-4853502</p>
+
+                            <h3 class="text-sm font-bold text-accent tracking-[0.2em] mb-2 mt-6 uppercase">Email</h3>
+                            <a href="mailto:painitan@painitan.com"
+                                class="text-white hover:text-accent transition-colors font-medium text-sm break-all">painitan@painitan.com</a>
+                        </div>
+
+                        <!-- 4. Hours & Links -->
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3
+                                class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Availability
+                            </h3>
+                            <div class="space-y-4 text-sm">
+                                <div class="flex justify-between items-center border-b border-border pb-2">
+                                    <span class="text-gray-400 font-light">Store Dine-In</span>
+                                    <span class="text-white font-medium">24 / 7</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-border pb-2">
+                                    <span class="text-gray-400 font-light">FoodPanda</span>
+                                    <span class="text-white font-medium">4am - 12am</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-border pb-2">
+                                    <span class="text-gray-400 font-light">GrabFood</span>
+                                    <span class="text-white font-medium">24 / 7</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-2">
+                                    <span class="text-gray-400 font-light">painitan.com</span>
+                                    <span class="text-white font-medium">24 / 7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="h-[350px]">
+                        <div
+                            class="w-full h-full rounded-3xl overflow-hidden border border-border shadow-2xl relative group">
+                            <iframe
+                                class="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700 opacity-90 group-hover:opacity-100"
+                                src="https://maps.google.com/maps?q=Gaisano+Mall+Iligan&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <div class="absolute inset-0 border-4 border-black pointer-events-none rounded-3xl"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LAPU-LAPU BRANCH COLUMN -->
+                <div class="space-y-8 animate-reveal delay-200 flex flex-col h-full">
+
+                    <div class="mb-4 border-b border-border pb-4">
+                        <h2 class="text-3xl md:text-4xl font-syne font-black text-white">Lapu-Lapu Branch</h2>
+                        <p class="text-accent tracking-[0.2em] text-sm font-bold uppercase mt-2">Open 24/7</p>
+                    </div>
+
+                    <!-- 1. Location -->
+                    <div class="glass-card p-8 rounded-2xl relative overflow-hidden flex-1">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-bl-full -z-10 blur-2xl"></div>
+                        <h3 class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase">Location & Landmark
+                        </h3>
+                        <div class="text-gray-300 font-light leading-relaxed mb-6">
+                            <p>[Your Lapu-Lapu Building/Floor]</p>
+                            <p>[Your Lapu-Lapu Street Name]</p>
+                            <p>Lapu-Lapu City, Cebu</p>
+                            <p>6015, Philippines</p>
+                            <p class="mt-2 text-accent italic text-sm">Update Address Here</p>
+                        </div>
+                        <div class="p-4 bg-black/40 border border-white/5 rounded-xl">
+                            <p class="text-sm text-gray-400 font-light"><strong
+                                    class="text-white font-medium">Landmark:</strong> [Your Lapu-Lapu local landmark]
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Contact Details -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3
+                                class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                                Call Us
+                            </h3>
+                            <p class="text-lg font-medium text-white mb-2">+63 [XXX-XXXX]</p>
+                            <p class="text-lg font-medium text-white mb-4">09XX-XXXXXXX</p>
+
+                            <h3 class="text-sm font-bold text-accent tracking-[0.2em] mb-2 mt-6 uppercase">Email</h3>
+                            <a href="mailto:lapulapubranch@painitan.com"
+                                class="text-white hover:text-accent transition-colors font-medium text-sm break-all">lapulapubranch@painitan.com</a>
+                        </div>
+
+                        <!-- 4. Hours & Links -->
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h3
+                                class="text-sm font-bold text-accent tracking-[0.2em] mb-4 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Availability
+                            </h3>
+                            <div class="space-y-4 text-sm">
+                                <div class="flex justify-between items-center border-b border-border pb-2">
+                                    <span class="text-gray-400 font-light">Store Dine-In</span>
+                                    <span class="text-white font-medium">24 / 7</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-border pb-2">
+                                    <span class="text-gray-400 font-light">FoodPanda</span>
+                                    <span class="text-white font-medium">4am - 12am</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-border pb-2">
+                                    <span class="text-gray-400 font-light">GrabFood</span>
+                                    <span class="text-white font-medium">24 / 7</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-2">
+                                    <span class="text-gray-400 font-light">painitan.com</span>
+                                    <span class="text-white font-medium">24 / 7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="h-[350px]">
+                        <div
+                            class="w-full h-full rounded-3xl overflow-hidden border border-border shadow-2xl relative group">
+                            <iframe
+                                class="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700 opacity-90 group-hover:opacity-100"
+                                src="https://maps.google.com/maps?q=Lapu-Lapu+City,+Cebu&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <div class="absolute inset-0 border-4 border-black pointer-events-none rounded-3xl"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Socials -->
+    <section class="py-16 bg-[#121212] border-y border-border">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="glass-card p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between shadow-2xl">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold text-white font-syne mb-2">Join our Community</h2>
+                    <p class="text-gray-400 font-light">Follow us for updates on both branches, new menus, and exclusive
+                        offers.</p>
+                </div>
+                <div class="flex gap-4 w-full md:w-auto">
+                    <a href="#"
+                        class="btn-accent px-8 py-4 rounded-full text-sm font-syne flex-1 md:flex-none text-center shadow-lg">Facebook
+                        Page</a>
+                    <a href="#"
+                        class="btn-outline px-8 py-4 rounded-full text-sm font-syne flex-1 md:flex-none text-center hover:bg-red-600 hover:border-red-600 hover:text-white transition-colors">YouTube
+                        Channel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High-end Footer -->
+    <footer class="bg-black pt-20 pb-10 border-t border-border mt-20">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <a href="index.html" class="block mb-6">
+                        <img src="images/logo.png" alt="Painitan Logo" class="h-16 w-auto object-contain">
+                    </a>
+                    <p class="text-gray-500 font-light text-sm max-w-sm leading-relaxed mb-6">
+                        Authentic Filipino dining evolved. Serving high-quality local delicacies 24/7.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-border flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.597 1.323-1.325v-21.35C24 .597 23.403 0 22.675 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-white font-syne font-bold mb-6 text-sm uppercase tracking-wider">Branches</h4>
+                    <ul class="space-y-3 text-gray-500 font-light text-sm">
+                        <li><a href="iligan.html" class="hover:text-accent transition-colors">Iligan</a></li>
+                        <li><a href="lapulapu.html" class="hover:text-accent transition-colors">Lapu-Lapu</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-syne font-bold mb-6 text-sm uppercase tracking-wider">Delivery Partners
+                    </h4>
+                    <ul class="space-y-3 text-gray-500 font-light text-sm">
+                        <li><a href="https://utak.io/store/painitan" class="hover:text-accent transition-colors">Direct
+                                (UTAK)</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">GrabFood</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">FoodPanda</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-medium tracking-wide">
+                <p>&copy; 2026 PAINITAN.COM. ALL RIGHTS RESERVED.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
